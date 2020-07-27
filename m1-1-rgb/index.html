@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafio 1</title>
+        <link
+            rel="stylesheet"
+            href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="top grey darken-4">
+            <img
+                src="https://www.igti.com.br/wp-content/uploads/2020/02/D.-Full-Stack.png"
+                alt=""
+            />
+            <span
+                >Bootcamp FullStack > <b>Desafio 02</b> - Pesquisa de
+                Usuários</span
+            >
+        </div>
+        <div class="content">
+            <table>
+                <tr>
+                    <td>
+                        <label for="">(R) Vermelho: </label>
+                    </td>
+                    <td>
+                        <input
+                            type="range"
+                            id="redRange"
+                            min="0"
+                            max="255"
+                            value="0"
+                        />
+                    </td>
+                    <td>
+                        <input
+                            type="number"
+                            id="redValue"
+                            disabled=""
+                            value="0"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">(G) Verde: </label>
+                    </td>
+                    <td>
+                        <input
+                            type="range"
+                            id="greenRange"
+                            min="0"
+                            max="255"
+                            value="0"
+                        />
+                    </td>
+                    <td>
+                        <input
+                            type="number"
+                            id="greenValue"
+                            disabled=""
+                            value="0"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">(B) Azul: </label>
+                    </td>
+                    <td>
+                        <input
+                            type="range"
+                            id="blueRange"
+                            min="0"
+                            max="255"
+                            value="0"
+                        />
+                    </td>
+                    <td>
+                        <input
+                            type="number"
+                            id="blueValue"
+                            disabled=""
+                            value="0"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div id="square"></div></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

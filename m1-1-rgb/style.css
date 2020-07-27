@@ -1,0 +1,44 @@
+body {
+    font-family: monospace;
+}
+
+.top {
+    width: 100vw;
+    padding: 10px 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top b {
+    color: red;
+}
+.top img {
+    width: 50px;
+}
+
+.content {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+td {
+    vertical-align: middle;
+    padding: 2px 5px;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+#square {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    margin-top: 10px;
+    border: 1px solid #e9e9e9;
+}
