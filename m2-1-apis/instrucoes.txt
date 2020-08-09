@@ -1,0 +1,9 @@
+# - Baixar os arquivos Cidades.json
+    *1 - Criar uma função para criar um JSON para cada estado com um array das cidades  ex:ES.json
+    *2 - 
+
+    [X] Criar um Json para cada estado
+    [X] Criar função para buscar UF
+    [X] Imprimir os 5 estados que mais contém cidades
+    [X] Imprimir os 5 estados que menos contém cidades
+    [] Imprimir

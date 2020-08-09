@@ -1,0 +1,414 @@
+2020-08-08T17:07:30.964Z[grades-control-api] info: API Started!
+2020-08-08T17:18:10.004Z[grades-control-api] info: API Started!
+2020-08-08T17:18:11.288Z[grades-control-api] info: POST /grade - {"id":49,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":30}
+2020-08-08T17:18:13.804Z[grades-control-api] info: API Started!
+2020-08-08T17:18:34.011Z[grades-control-api] info: API Started!
+2020-08-08T17:19:09.899Z[grades-control-api] info: API Started!
+2020-08-08T17:19:10.699Z[grades-control-api] info: POST /grade - {"id":50,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":30,"timestamp":"2020-08-08T17:19:10.466Z"}
+2020-08-08T17:19:29.945Z[grades-control-api] info: API Started!
+2020-08-08T17:19:46.718Z[grades-control-api] info: API Started!
+2020-08-08T17:19:57.688Z[grades-control-api] info: API Started!
+2020-08-08T17:20:07.722Z[grades-control-api] info: API Started!
+2020-08-08T17:20:30.236Z[grades-control-api] info: API Started!
+2020-08-08T17:21:00.457Z[grades-control-api] info: API Started!
+2020-08-08T17:21:37.024Z[grades-control-api] info: API Started!
+2020-08-08T17:21:48.356Z[grades-control-api] info: API Started!
+2020-08-08T17:22:24.113Z[grades-control-api] info: API Started!
+2020-08-08T17:22:50.630Z[grades-control-api] info: API Started!
+2020-08-08T17:23:31.514Z[grades-control-api] info: API Started!
+2020-08-08T17:23:41.303Z[grades-control-api] info: API Started!
+2020-08-08T17:23:47.442Z[grades-control-api] info: API Started!
+2020-08-08T17:24:04.847Z[grades-control-api] info: API Started!
+2020-08-08T17:24:23.005Z[grades-control-api] info: API Started!
+2020-08-08T17:25:00.355Z[grades-control-api] info: API Started!
+2020-08-08T17:25:11.115Z[grades-control-api] info: API Started!
+2020-08-08T17:25:40.630Z[grades-control-api] info: API Started!
+2020-08-08T17:26:11.003Z[grades-control-api] info: API Started!
+2020-08-08T17:26:54.145Z[grades-control-api] info: API Started!
+2020-08-08T17:27:04.216Z[grades-control-api] info: API Started!
+2020-08-08T17:27:42.089Z[grades-control-api] info: POST /grade - {"id":49,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":30,"timestamp":"2020-08-08T17:27:42.077Z"}
+2020-08-08T17:27:43.430Z[grades-control-api] info: API Started!
+2020-08-08T17:29:31.964Z[grades-control-api] error: PUT /grades - Registro não encontrado!
+2020-08-08T17:30:25.376Z[grades-control-api] info: API Started!
+2020-08-08T17:30:26.167Z[grades-control-api] error: PUT /grades - Campos obrigatórios não preenchidos!
+2020-08-08T17:30:59.972Z[grades-control-api] info: API Started!
+2020-08-08T17:31:00.742Z[grades-control-api] error: PUT /grades - Campos obrigatórios não preenchidos!
+2020-08-08T17:33:53.910Z[grades-control-api] info: PUT /grade - {"id":49,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":50}
+2020-08-08T17:33:55.532Z[grades-control-api] info: API Started!
+2020-08-08T17:34:12.005Z[grades-control-api] info: API Started!
+2020-08-08T17:34:13.641Z[grades-control-api] info: PUT /grade - {"id":49,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":50}
+2020-08-08T17:34:22.192Z[grades-control-api] info: API Started!
+2020-08-08T17:34:22.287Z[grades-control-api] info: PUT /grade - {"id":49,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":590}
+2020-08-08T17:34:23.684Z[grades-control-api] info: API Started!
+2020-08-08T17:34:25.933Z[grades-control-api] info: PUT /grade - {"id":49,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":90}
+2020-08-08T17:34:39.164Z[grades-control-api] info: API Started!
+2020-08-08T17:35:10.426Z[grades-control-api] info: API Started!
+2020-08-08T17:35:19.670Z[grades-control-api] info: API Started!
+2020-08-08T23:07:03.490Z[grades-control-api] info: API Started!
+2020-08-08T23:07:07.185Z[grades-control-api] info: DELETE /grades/:id - 49
+2020-08-08T23:07:09.153Z[grades-control-api] error: EBUSY: resource busy or locked, open 'C:\Users\Victor\OneDrive\Bootcamp\Desafios\m2-grades-control-api\grades.json'
+2020-08-08T23:07:41.614Z[grades-control-api] info: POST /grade - {"id":50,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":30,"timestamp":"2020-08-08T23:07:41.601Z"}
+2020-08-08T23:07:42.851Z[grades-control-api] info: API Started!
+2020-08-08T23:07:55.915Z[grades-control-api] info: API Started!
+2020-08-08T23:08:11.905Z[grades-control-api] info: API Started!
+2020-08-08T23:08:43.769Z[grades-control-api] info: API Started!
+2020-08-08T23:08:44.698Z[grades-control-api] info: DELETE /grades/:id - 49
+2020-08-08T23:08:45.893Z[grades-control-api] info: API Started!
+2020-08-08T23:10:00.230Z[grades-control-api] info: API Started!
+2020-08-08T23:10:00.863Z[grades-control-api] error: DELETE /grades - Registro não encontrado!
+2020-08-08T23:10:05.312Z[grades-control-api] error: DELETE /grades - Registro não encontrado!
+2020-08-08T23:10:29.965Z[grades-control-api] info: API Started!
+2020-08-08T23:10:35.182Z[grades-control-api] info: API Started!
+2020-08-08T23:10:41.231Z[grades-control-api] error: DELETE /grades - Registro não encontrado!
+2020-08-08T23:10:47.743Z[grades-control-api] error: DELETE /grades - Registro não encontrado!
+2020-08-08T23:11:32.063Z[grades-control-api] info: API Started!
+2020-08-08T23:11:32.682Z[grades-control-api] error: DELETE /grades - Registro não encontrado!
+2020-08-08T23:12:12.105Z[grades-control-api] info: API Started!
+2020-08-08T23:12:13.387Z[grades-control-api] error: DELETE /grades - Registro não encontrado!
+2020-08-08T23:12:26.566Z[grades-control-api] info: API Started!
+2020-08-08T23:12:27.659Z[grades-control-api] error: DELETE /grades - Registro não encontrado!
+2020-08-08T23:12:48.266Z[grades-control-api] info: API Started!
+2020-08-08T23:12:48.468Z[grades-control-api] error: DELETE /grades - Registro não encontrado!
+2020-08-08T23:13:01.886Z[grades-control-api] info: API Started!
+2020-08-08T23:13:02.626Z[grades-control-api] error: DELETE /grades - Registro não encontrado!
+2020-08-08T23:13:20.468Z[grades-control-api] info: API Started!
+2020-08-08T23:13:20.582Z[grades-control-api] info: DELETE /grades/:id - 50
+2020-08-08T23:13:21.914Z[grades-control-api] info: API Started!
+2020-08-08T23:13:41.113Z[grades-control-api] info: API Started!
+2020-08-08T23:14:13.314Z[grades-control-api] info: API Started!
+2020-08-08T23:14:24.827Z[grades-control-api] info: API Started!
+2020-08-08T23:14:37.508Z[grades-control-api] info: API Started!
+2020-08-08T23:15:49.036Z[grades-control-api] info: API Started!
+2020-08-08T23:16:00.594Z[grades-control-api] info: API Started!
+2020-08-08T23:16:13.770Z[grades-control-api] info: API Started!
+2020-08-08T23:16:20.504Z[grades-control-api] info: API Started!
+2020-08-08T23:17:31.339Z[grades-control-api] info: API Started!
+2020-08-08T23:17:44.031Z[grades-control-api] info: API Started!
+2020-08-08T23:17:53.856Z[grades-control-api] info: API Started!
+2020-08-08T23:17:58.232Z[grades-control-api] info: API Started!
+2020-08-08T23:18:17.042Z[grades-control-api] info: API Started!
+2020-08-08T23:18:21.922Z[grades-control-api] info: API Started!
+2020-08-08T23:18:41.084Z[grades-control-api] info: API Started!
+2020-08-08T23:19:13.152Z[grades-control-api] info: API Started!
+2020-08-08T23:41:43.027Z[grades-control-api] info: API Started!
+2020-08-08T23:41:47.009Z[grades-control-api] info: API Started!
+2020-08-08T23:41:54.661Z[grades-control-api] info: API Started!
+2020-08-08T23:41:56.584Z[grades-control-api] info: API Started!
+2020-08-08T23:42:28.954Z[grades-control-api] error: GET /grades - account is not defined
+2020-08-08T23:42:37.054Z[grades-control-api] info: API Started!
+2020-08-08T23:42:40.819Z[grades-control-api] info: API Started!
+2020-08-08T23:42:41.752Z[grades-control-api] info: GET /account/id - 48
+2020-08-08T23:42:54.196Z[grades-control-api] info: GET /account/id - 44
+2020-08-08T23:42:59.068Z[grades-control-api] info: GET /account/id - 440
+2020-08-08T23:43:05.372Z[grades-control-api] info: GET /account/id - 4401
+2020-08-08T23:43:23.392Z[grades-control-api] info: API Started!
+2020-08-08T23:43:29.346Z[grades-control-api] info: GET /account/id - 4401
+2020-08-08T23:43:55.345Z[grades-control-api] info: API Started!
+2020-08-08T23:43:55.860Z[grades-control-api] info: GET /account/id - 4401
+2020-08-08T23:44:06.951Z[grades-control-api] info: API Started!
+2020-08-08T23:44:06.991Z[grades-control-api] info: GET /account/id - 4401
+2020-08-08T23:44:09.784Z[grades-control-api] info: GET /account/id - 44
+2020-08-08T23:44:13.174Z[grades-control-api] info: GET /account/id - 4411
+2020-08-08T23:44:23.411Z[grades-control-api] info: API Started!
+2020-08-08T23:44:23.691Z[grades-control-api] info: GET /account/id - 4411
+2020-08-08T23:44:54.460Z[grades-control-api] info: API Started!
+2020-08-08T23:44:56.291Z[grades-control-api] info: API Started!
+2020-08-08T23:44:56.423Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-08T23:45:01.944Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-08T23:45:04.327Z[grades-control-api] info: GET /account/id - 44
+2020-08-08T23:45:08.422Z[grades-control-api] info: GET /account/id - 1
+2020-08-08T23:45:27.053Z[grades-control-api] info: API Started!
+2020-08-08T23:46:14.867Z[grades-control-api] info: API Started!
+2020-08-08T23:46:25.729Z[grades-control-api] info: API Started!
+2020-08-08T23:46:40.638Z[grades-control-api] info: API Started!
+2020-08-08T23:47:06.159Z[grades-control-api] info: API Started!
+2020-08-08T23:47:14.683Z[grades-control-api] info: API Started!
+2020-08-08T23:48:57.485Z[grades-control-api] info: API Started!
+2020-08-08T23:49:07.351Z[grades-control-api] info: API Started!
+2020-08-08T23:49:23.993Z[grades-control-api] info: API Started!
+2020-08-08T23:54:40.903Z[grades-control-api] info: API Started!
+2020-08-08T23:57:00.823Z[grades-control-api] info: API Started!
+2020-08-08T23:58:23.113Z[grades-control-api] info: API Started!
+2020-08-08T23:58:51.949Z[grades-control-api] info: API Started!
+2020-08-08T23:59:36.891Z[grades-control-api] info: API Started!
+2020-08-08T23:59:45.318Z[grades-control-api] info: API Started!
+2020-08-09T00:00:59.442Z[grades-control-api] info: API Started!
+2020-08-09T00:01:04.520Z[grades-control-api] info: API Started!
+2020-08-09T00:01:29.587Z[grades-control-api] info: API Started!
+2020-08-09T00:01:32.561Z[grades-control-api] info: API Started!
+2020-08-09T00:01:45.826Z[grades-control-api] info: API Started!
+2020-08-09T00:02:19.475Z[grades-control-api] info: API Started!
+2020-08-09T00:02:27.024Z[grades-control-api] info: API Started!
+2020-08-09T00:02:40.805Z[grades-control-api] info: API Started!
+2020-08-09T00:03:27.339Z[grades-control-api] info: GET /grades - all returned
+2020-08-09T00:04:04.530Z[grades-control-api] info: API Started!
+2020-08-09T00:04:05.237Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:04:16.377Z[grades-control-api] info: API Started!
+2020-08-09T00:04:16.663Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:04:27.855Z[grades-control-api] info: API Started!
+2020-08-09T00:04:32.540Z[grades-control-api] info: API Started!
+2020-08-09T00:04:33.882Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:05:07.265Z[grades-control-api] info: API Started!
+2020-08-09T00:05:08.292Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:05:12.354Z[grades-control-api] info: API Started!
+2020-08-09T00:05:18.258Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:05:31.869Z[grades-control-api] info: API Started!
+2020-08-09T00:05:32.081Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:05:37.196Z[grades-control-api] info: API Started!
+2020-08-09T00:06:51.715Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:06:52.909Z[grades-control-api] info: API Started!
+2020-08-09T00:07:06.624Z[grades-control-api] info: API Started!
+2020-08-09T00:07:18.136Z[grades-control-api] info: API Started!
+2020-08-09T00:07:25.998Z[grades-control-api] info: API Started!
+2020-08-09T00:07:27.083Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:07:28.357Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:07:28.956Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:07:29.330Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:07:29.579Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:07:58.598Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:08:26.693Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:08:29.831Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:08:40.872Z[grades-control-api] info: API Started!
+2020-08-09T00:08:40.971Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:08:49.515Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T00:09:02.546Z[grades-control-api] info: API Started!
+2020-08-09T00:09:50.748Z[grades-control-api] info: API Started!
+2020-08-09T00:09:55.357Z[grades-control-api] info: API Started!
+2020-08-09T00:10:04.277Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:10:26.104Z[grades-control-api] info: API Started!
+2020-08-09T00:10:36.764Z[grades-control-api] info: API Started!
+2020-08-09T00:10:37.017Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:12:03.674Z[grades-control-api] info: API Started!
+2020-08-09T00:12:15.852Z[grades-control-api] info: API Started!
+2020-08-09T00:12:16.664Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:12:38.859Z[grades-control-api] info: API Started!
+2020-08-09T00:12:40.903Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:12:57.495Z[grades-control-api] info: API Started!
+2020-08-09T00:13:00.967Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:13:19.554Z[grades-control-api] info: API Started!
+2020-08-09T00:13:21.115Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:13:41.404Z[grades-control-api] info: API Started!
+2020-08-09T00:13:41.873Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:13:56.803Z[grades-control-api] info: API Started!
+2020-08-09T00:13:57.090Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:14:49.272Z[grades-control-api] info: API Started!
+2020-08-09T00:14:52.616Z[grades-control-api] error: GET /grades - Cannot access 'grade' before initialization
+2020-08-09T00:15:04.916Z[grades-control-api] info: API Started!
+2020-08-09T00:15:15.637Z[grades-control-api] error: GET /grades - Cannot access 'grade' before initialization
+2020-08-09T00:15:28.161Z[grades-control-api] info: API Started!
+2020-08-09T00:15:34.084Z[grades-control-api] error: GET /grades - Cannot access 'grade' before initialization
+2020-08-09T00:15:51.520Z[grades-control-api] info: API Started!
+2020-08-09T00:15:55.434Z[grades-control-api] error: GET /grades - Cannot access 'grade' before initialization
+2020-08-09T00:16:04.105Z[grades-control-api] info: API Started!
+2020-08-09T00:16:04.197Z[grades-control-api] error: GET /grades - Cannot access 'grade' before initialization
+2020-08-09T00:16:11.654Z[grades-control-api] info: API Started!
+2020-08-09T00:16:11.817Z[grades-control-api] error: GET /grades - Cannot access 'grade' before initialization
+2020-08-09T00:16:51.384Z[grades-control-api] info: API Started!
+2020-08-09T00:17:10.428Z[grades-control-api] info: API Started!
+2020-08-09T00:17:17.155Z[grades-control-api] info: API Started!
+2020-08-09T00:17:24.582Z[grades-control-api] info: API Started!
+2020-08-09T00:18:02.646Z[grades-control-api] info: API Started!
+2020-08-09T00:18:11.441Z[grades-control-api] info: API Started!
+2020-08-09T00:18:11.580Z[grades-control-api] error: GET /grades - grade is not defined
+2020-08-09T00:18:29.148Z[grades-control-api] info: API Started!
+2020-08-09T00:18:29.395Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:18:36.252Z[grades-control-api] info: API Started!
+2020-08-09T00:18:39.334Z[grades-control-api] error: GET /grades - grades is not defined
+2020-08-09T00:18:42.838Z[grades-control-api] info: API Started!
+2020-08-09T00:18:49.356Z[grades-control-api] info: API Started!
+2020-08-09T00:18:50.326Z[grades-control-api] info: GET /account/id - undefined
+2020-08-09T00:20:55.803Z[grades-control-api] info: API Started!
+2020-08-09T00:21:32.145Z[grades-control-api] info: API Started!
+2020-08-09T00:21:37.659Z[grades-control-api] info: API Started!
+2020-08-09T00:21:38.969Z[grades-control-api] error: GET /grades - grade is not defined
+2020-08-09T00:21:47.134Z[grades-control-api] info: API Started!
+2020-08-09T00:21:47.725Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:21:58.041Z[grades-control-api] info: API Started!
+2020-08-09T00:22:04.677Z[grades-control-api] info: API Started!
+2020-08-09T00:22:05.620Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:22:11.617Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:23:14.589Z[grades-control-api] info: API Started!
+2020-08-09T00:23:18.312Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:24:07.591Z[grades-control-api] info: API Started!
+2020-08-09T00:24:13.131Z[grades-control-api] info: API Started!
+2020-08-09T00:24:18.630Z[grades-control-api] info: API Started!
+2020-08-09T00:24:19.662Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:24:25.277Z[grades-control-api] info: API Started!
+2020-08-09T00:24:25.814Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:43:02.822Z[grades-control-api] info: API Started!
+2020-08-09T00:43:04.949Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:43:22.614Z[grades-control-api] info: API Started!
+2020-08-09T00:43:51.179Z[grades-control-api] info: API Started!
+2020-08-09T00:43:56.954Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:46:17.448Z[grades-control-api] info: API Started!
+2020-08-09T00:47:08.455Z[grades-control-api] info: API Started!
+2020-08-09T00:47:57.309Z[grades-control-api] info: API Started!
+2020-08-09T00:47:58.809Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:48:13.532Z[grades-control-api] info: API Started!
+2020-08-09T00:48:17.568Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:50:29.507Z[grades-control-api] info: API Started!
+2020-08-09T00:50:36.756Z[grades-control-api] info: GET /account/student/note - undefined
+2020-08-09T00:51:55.970Z[grades-control-api] info: API Started!
+2020-08-09T00:56:38.784Z[grades-control-api] info: API Started!
+2020-08-09T00:56:40.538Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/02 - Node
+2020-08-09T00:57:34.874Z[grades-control-api] info: API Started!
+2020-08-09T00:58:04.027Z[grades-control-api] error: GET /grades - Invalid status code: 78
+2020-08-09T00:58:20.928Z[grades-control-api] info: API Started!
+2020-08-09T00:58:20.953Z[grades-control-api] error: GET /grades - Invalid status code: 78
+2020-08-09T00:58:23.930Z[grades-control-api] error: GET /grades - Invalid status code: 78
+2020-08-09T00:58:36.040Z[grades-control-api] info: API Started!
+2020-08-09T00:59:03.589Z[grades-control-api] info: API Started!
+2020-08-09T00:59:04.734Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/02 - Node
+2020-08-09T00:59:14.081Z[grades-control-api] info: API Started!
+2020-08-09T00:59:14.186Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/02 - Node
+2020-08-09T01:01:03.788Z[grades-control-api] info: API Started!
+2020-08-09T01:01:05.370Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/02 - Node
+2020-08-09T01:01:16.682Z[grades-control-api] info: GET /grades - all returned
+2020-08-09T01:02:21.620Z[grades-control-api] info: API Started!
+2020-08-09T01:03:04.443Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/02 - Node
+2020-08-09T01:05:49.698Z[grades-control-api] info: API Started!
+2020-08-09T01:05:54.807Z[grades-control-api] info: API Started!
+2020-08-09T01:06:00.447Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/02 - Node
+2020-08-09T01:06:08.413Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/01
+2020-08-09T01:06:59.713Z[grades-control-api] info: API Started!
+2020-08-09T01:07:10.166Z[grades-control-api] info: API Started!
+2020-08-09T01:07:21.942Z[grades-control-api] info: API Started!
+2020-08-09T01:09:35.275Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/01
+2020-08-09T01:10:06.619Z[grades-control-api] info: API Started!
+2020-08-09T01:10:18.164Z[grades-control-api] info: API Started!
+2020-08-09T01:11:42.435Z[grades-control-api] info: API Started!
+2020-08-09T01:24:51.574Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04 - MongoDB
+2020-08-09T01:25:15.104Z[grades-control-api] info: API Started!
+2020-08-09T01:25:15.315Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04 - MongoDB
+2020-08-09T01:25:33.069Z[grades-control-api] info: API Started!
+2020-08-09T01:25:33.654Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04 - MongoDB
+2020-08-09T01:25:46.738Z[grades-control-api] error: GET /grades - Campos obrigatórios não preenchidos!
+2020-08-09T01:25:51.761Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04
+2020-08-09T01:26:11.015Z[grades-control-api] info: API Started!
+2020-08-09T01:26:13.335Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04
+2020-08-09T01:26:20.837Z[grades-control-api] info: API Started!
+2020-08-09T01:26:20.895Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04
+2020-08-09T01:26:25.136Z[grades-control-api] info: API Started!
+2020-08-09T01:27:14.804Z[grades-control-api] info: API Started!
+2020-08-09T01:27:27.582Z[grades-control-api] info: API Started!
+2020-08-09T01:29:11.131Z[grades-control-api] info: API Started!
+2020-08-09T01:29:16.472Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T01:29:20.219Z[grades-control-api] info: API Started!
+2020-08-09T01:29:21.278Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04 - MongoDB
+2020-08-09T01:29:24.730Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T01:29:29.104Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T01:29:33.740Z[grades-control-api] error: GET /grades - Campos obrigatórios não preenchidos!
+2020-08-09T01:29:40.124Z[grades-control-api] info: API Started!
+2020-08-09T01:30:33.165Z[grades-control-api] info: API Started!
+2020-08-09T01:31:12.859Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04 - MongoDB
+2020-08-09T01:31:33.127Z[grades-control-api] info: API Started!
+2020-08-09T01:31:34.741Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04 - MongoDB
+2020-08-09T01:31:42.275Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04 - MongoDB
+2020-08-09T01:34:46.736Z[grades-control-api] info: API Started!
+2020-08-09T01:34:49.489Z[grades-control-api] info: API Started!
+2020-08-09T01:35:07.395Z[grades-control-api] info: API Started!
+2020-08-09T01:35:15.117Z[grades-control-api] info: API Started!
+2020-08-09T01:35:21.296Z[grades-control-api] info: API Started!
+2020-08-09T01:35:39.946Z[grades-control-api] info: API Started!
+2020-08-09T01:35:54.203Z[grades-control-api] info: API Started!
+2020-08-09T01:36:57.864Z[grades-control-api] info: API Started!
+2020-08-09T01:37:40.435Z[grades-control-api] info: API Started!
+2020-08-09T01:37:55.892Z[grades-control-api] info: API Started!
+2020-08-09T01:38:25.245Z[grades-control-api] info: API Started!
+2020-08-09T01:38:50.046Z[grades-control-api] info: API Started!
+2020-08-09T01:44:11.350Z[grades-control-api] info: API Started!
+2020-08-09T01:44:30.816Z[grades-control-api] info: API Started!
+2020-08-09T01:46:26.923Z[grades-control-api] info: API Started!
+2020-08-09T01:46:34.126Z[grades-control-api] info: API Started!
+2020-08-09T01:46:53.370Z[grades-control-api] info: API Started!
+2020-08-09T01:47:01.251Z[grades-control-api] info: API Started!
+2020-08-09T01:47:24.715Z[grades-control-api] info: API Started!
+2020-08-09T01:47:30.141Z[grades-control-api] info: API Started!
+2020-08-09T01:48:37.009Z[grades-control-api] info: API Started!
+2020-08-09T01:48:51.112Z[grades-control-api] error: GET /grades - student is not defined
+2020-08-09T01:49:17.436Z[grades-control-api] info: API Started!
+2020-08-09T01:49:17.906Z[grades-control-api] error: GET /grades - student is not defined
+2020-08-09T01:49:47.519Z[grades-control-api] info: API Started!
+2020-08-09T01:50:05.804Z[grades-control-api] error: GET /grades - student is not defined
+2020-08-09T01:50:43.630Z[grades-control-api] info: API Started!
+2020-08-09T01:50:44.477Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Desafio
+2020-08-09T01:52:21.890Z[grades-control-api] info: API Started!
+2020-08-09T01:52:31.572Z[grades-control-api] error: GET /grades - Campos obrigatórios não preenchidos!
+2020-08-09T01:52:34.427Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Desafio
+2020-08-09T01:52:48.413Z[grades-control-api] info: API Started!
+2020-08-09T01:52:48.926Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Desafio
+2020-08-09T01:52:55.908Z[grades-control-api] info: API Started!
+2020-08-09T01:52:56.129Z[grades-control-api] error: GET /grades - Invalid status code: 36.5
+2020-08-09T01:57:56.808Z[grades-control-api] info: API Started!
+2020-08-09T01:58:08.549Z[grades-control-api] error: GET /grades - Invalid status code: 36.5
+2020-08-09T01:58:39.327Z[grades-control-api] info: API Started!
+2020-08-09T01:58:42.022Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Desafio
+2020-08-09T01:59:41.359Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T01:59:51.054Z[grades-control-api] info: API Started!
+2020-08-09T02:07:17.221Z[grades-control-api] info: API Started!
+2020-08-09T02:07:30.148Z[grades-control-api] info: API Started!
+2020-08-09T02:07:35.766Z[grades-control-api] info: API Started!
+2020-08-09T02:07:37.489Z[grades-control-api] info: API Started!
+2020-08-09T02:08:07.928Z[grades-control-api] info: API Started!
+2020-08-09T02:08:32.783Z[grades-control-api] info: API Started!
+2020-08-09T02:08:43.913Z[grades-control-api] info: API Started!
+2020-08-09T02:08:49.363Z[grades-control-api] info: API Started!
+2020-08-09T02:09:11.223Z[grades-control-api] info: API Started!
+2020-08-09T02:09:26.889Z[grades-control-api] info: API Started!
+2020-08-09T02:09:44.778Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T02:12:44.270Z[grades-control-api] info: API Started!
+2020-08-09T02:21:07.294Z[grades-control-api] info: API Started!
+2020-08-09T02:21:12.888Z[grades-control-api] info: API Started!
+2020-08-09T02:21:23.767Z[grades-control-api] info: API Started!
+2020-08-09T02:22:35.008Z[grades-control-api] info: API Started!
+2020-08-09T02:22:46.575Z[grades-control-api] info: API Started!
+2020-08-09T02:22:50.238Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T02:23:00.161Z[grades-control-api] info: API Started!
+2020-08-09T02:23:02.319Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T02:23:13.481Z[grades-control-api] info: API Started!
+2020-08-09T02:23:13.737Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T02:23:28.163Z[grades-control-api] info: API Started!
+2020-08-09T02:26:38.786Z[grades-control-api] info: API Started!
+2020-08-09T02:26:40.913Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T02:27:00.803Z[grades-control-api] info: API Started!
+2020-08-09T02:27:00.927Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T02:27:19.204Z[grades-control-api] info: API Started!
+2020-08-09T02:27:35.840Z[grades-control-api] error: GET /grades - Campos obrigatórios não preenchidos!
+2020-08-09T02:27:40.085Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T02:28:01.979Z[grades-control-api] info: API Started!
+2020-08-09T02:28:11.533Z[grades-control-api] info: API Started!
+2020-08-09T02:28:12.173Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T02:28:17.902Z[grades-control-api] error: GET /grades - Nenhum registro encontrado!
+2020-08-09T02:28:21.749Z[grades-control-api] error: GET /grades - Nenhum registro encontrado!
+2020-08-09T02:28:25.775Z[grades-control-api] error: GET /grades - Campos obrigatórios não preenchidos!
+2020-08-09T02:28:27.962Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T02:28:39.919Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Desafio
+2020-08-09T02:29:34.888Z[grades-control-api] info: API Started!
+2020-08-09T02:29:52.468Z[grades-control-api] info: API Started!
+2020-08-09T02:29:56.212Z[grades-control-api] info: API Started!
+2020-08-09T02:30:15.128Z[grades-control-api] info: API Started!
+2020-08-09T02:30:24.348Z[grades-control-api] info: API Started!
+2020-08-09T02:30:34.278Z[grades-control-api] info: API Started!
+2020-08-09T02:30:46.198Z[grades-control-api] info: API Started!
+2020-08-09T02:31:02.131Z[grades-control-api] info: API Started!
+2020-08-09T02:31:21.032Z[grades-control-api] info: API Started!
+2020-08-09T02:31:28.551Z[grades-control-api] info: API Started!
+2020-08-09T02:31:58.272Z[grades-control-api] info: API Started!
+2020-08-09T02:32:15.288Z[grades-control-api] info: API Started!
+2020-08-09T02:32:22.331Z[grades-control-api] info: GET /grades - all returned
+2020-08-09T02:32:24.147Z[grades-control-api] info: GET /grades/id - 1
+2020-08-09T02:32:26.572Z[grades-control-api] info: GET /grades - all returned
+2020-08-09T02:32:36.034Z[grades-control-api] info: API Started!
+2020-08-09T02:32:36.247Z[grades-control-api] info: GET /grades - all returned
+2020-08-09T02:32:38.731Z[grades-control-api] info: GET /grades/id - 1
+2020-08-09T02:32:42.836Z[grades-control-api] info: GET /account/student/note - Rodrigo Branas/04 - MongoDB
+2020-08-09T02:32:48.463Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Fórum
+2020-08-09T02:32:51.761Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Desafio
+2020-08-09T02:33:06.282Z[grades-control-api] info: POST /grade - {"id":51,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":30,"timestamp":"2020-08-09T02:33:06.243Z"}
+2020-08-09T02:33:07.998Z[grades-control-api] info: API Started!
+2020-08-09T02:33:42.118Z[grades-control-api] info: PUT /grade - {"id":51,"student":"Victor de Carvalho","subject":"01 - Teste","type":"Fórum","value":90}
+2020-08-09T02:33:43.678Z[grades-control-api] info: API Started!
+2020-08-09T02:33:49.393Z[grades-control-api] info: PUT /grade - {"id":51,"student":"Victor de Carvalho Silva","subject":"01 - Teste","type":"Fórum","value":90}
+2020-08-09T02:33:54.397Z[grades-control-api] info: API Started!
+2020-08-09T02:33:59.680Z[grades-control-api] info: API Started!
+2020-08-09T02:34:48.544Z[grades-control-api] info: API Started!
