@@ -412,3 +412,25 @@
 2020-08-09T02:33:54.397Z[grades-control-api] info: API Started!
 2020-08-09T02:33:59.680Z[grades-control-api] info: API Started!
 2020-08-09T02:34:48.544Z[grades-control-api] info: API Started!
+2020-08-09T18:44:05.325Z[grades-control-api] info: API Started!
+2020-08-09T18:51:01.121Z[grades-control-api] info: GET /account/student/note - 01 - JavaScript/Fórum
+2020-08-09T18:51:32.513Z[grades-control-api] info: GET /account/student/note - 03 - React/Trabalho Prático
+2020-08-09T18:52:17.819Z[grades-control-api] info: GET /account/student/note - 02 - Node/Desafio
+2020-08-09T18:52:42.706Z[grades-control-api] info: GET /account/student/note - Loiane Groner/02 - Node
+2020-08-09T18:53:44.284Z[grades-control-api] info: POST /grade - {"id":52,"student":"Roberto Achar","subject":"03 - React","type":"Fórum","value":10,"timestamp":"2020-08-09T18:53:44.280Z"}
+2020-08-09T18:53:51.300Z[grades-control-api] info: API Started!
+2020-08-09T18:54:04.174Z[grades-control-api] info: GET /account/student/note - Roberto Achar/03 - React
+2020-08-09T18:54:12.548Z[grades-control-api] info: GET /account/student/note - Roberto Achar/03 - React
+2020-08-09T18:54:33.879Z[grades-control-api] info: GET /grades/id - 52
+2020-08-09T18:54:41.350Z[grades-control-api] info: GET /grades - all returned
+2020-08-09T18:56:15.948Z[grades-control-api] info: GET /grades/id - 33
+2020-08-09T18:56:40.601Z[grades-control-api] info: PUT /grade - {"id":33,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":15}
+2020-08-09T18:56:42.675Z[grades-control-api] info: API Started!
+2020-08-09T18:56:47.513Z[grades-control-api] info: GET /grades/id - 33
+2020-08-09T18:56:59.007Z[grades-control-api] info: GET /account/student/note - 01 - JavaScript/Desafio
+2020-08-09T18:57:30.924Z[grades-control-api] info: DELETE /grades/:id - 32
+2020-08-09T18:57:32.143Z[grades-control-api] info: API Started!
+2020-08-09T18:57:35.362Z[grades-control-api] error: GET /grades - Registro não encontrado!
+2020-08-09T18:57:54.507Z[grades-control-api] info: GET /account/student/note - 04 - MongoDB/Trabalho Prático
+2020-08-09T18:58:04.331Z[grades-control-api] info: GET /grades/id - 43
+2020-08-09T18:58:09.823Z[grades-control-api] info: GET /grades/id - 43

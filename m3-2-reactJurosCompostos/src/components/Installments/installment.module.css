@@ -1,0 +1,23 @@
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.item {
+    min-width: 150px;
+    padding: 10px 5px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.index {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}

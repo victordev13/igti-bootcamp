@@ -1,0 +1,21 @@
+.top {
+    width: 100vw;
+    padding: 5px 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.top b {
+    color: yellow;
+    font-size: 14pt;
+}
+.top img {
+    width: 50px;
+}
