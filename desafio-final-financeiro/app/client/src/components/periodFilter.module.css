@@ -1,0 +1,11 @@
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.flexRow select {
+    width: 150px;
+    margin: 0 10px;
+}
