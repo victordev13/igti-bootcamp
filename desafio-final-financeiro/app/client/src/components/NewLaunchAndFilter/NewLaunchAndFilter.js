@@ -1,13 +1,27 @@
 import React from 'react';
-import NewLaunchButton from './NewLaunchButton';
 import css from './newLaunchAndFilter.module.css';
-import InputFilter from './InputFilter';
 
-export default function NewLaunchAndFilter() {
+export default function NewLaunchAndFilter({ newTransaction }) {
+    const handleNewTransaction = () => {
+        newTransaction();
+    };
     return (
-        <div className={css.flexRow}>
-            <NewLaunchButton disabled={true} />
-            <InputFilter />
+        <div className="row">
+            <div className={`${css.flexRow}`}>
+                <div className="input-field col s4">
+                    <a
+                        className="waves-effect waves-light btn"
+                        style={{ position: 'initial' }}
+                        onClick={handleNewTransaction}
+                    >
+                        <i className="material-icons left">add</i>NOVO
+                        LANÇAMENTO
+                    </a>
+                </div>
+                <div className="input-field col s8">
+                    <input type="text" />
+                </div>
+            </div>
         </div>
     );
 }

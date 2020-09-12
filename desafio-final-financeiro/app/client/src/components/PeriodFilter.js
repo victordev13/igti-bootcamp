@@ -1,74 +1,126 @@
 import React from 'react';
 import css from './periodFilter.module.css';
+import moment from 'moment';
 
-export default function PeriodFilter({ currentMonth, filter }) {
-    const months = [
-        { text: 'Jan/2019', value: '1-2019' },
-        { text: 'Fev/2019', value: '2-2019' },
-        { text: 'Mar/2019', value: '3-2019' },
-        { text: 'Abr/2019', value: '4-2019' },
-        { text: 'Mai/2019', value: '5-2019' },
-        { text: 'Jun/2019', value: '6-2019' },
-        { text: 'Jul/2019', value: '7-2019' },
-        { text: 'Ago/2019', value: '8-2019' },
-        { text: 'Set/2019', value: '9-2019' },
-        { text: 'Out/2019', value: '10-2019' },
-        { text: 'Nov/2019', value: '11-2019' },
-        { text: 'Dez/2019', value: '12-2019' },
+export default function PeriodFilter({ filter }) {
+    const getCurrentMonth = () => {
+        const currentDate = new Date();
+        return `${
+            currentDate.getFullYear() + 1
+        }-${currentDate.getMonth().toString().padStart(2, '0')}`;
+    };
+    const [currentMonth, setCurrentMonth] = React.useState(getCurrentMonth);
 
-        { text: 'Jan/2020', value: '1-2020' },
-        { text: 'Fev/2020', value: '2-2020' },
-        { text: 'Mar/2020', value: '3-2020' },
-        { text: 'Abr/2020', value: '4-2020' },
-        { text: 'Mai/2020', value: '5-2020' },
-        { text: 'Jun/2020', value: '6-2020' },
-        { text: 'Jul/2020', value: '7-2020' },
-        { text: 'Ago/2020', value: '8-2020' },
-        { text: 'Set/2020', value: '9-2020' },
-        { text: 'Out/2020', value: '10-2020' },
-        { text: 'Nov/2020', value: '11-2020' },
-        { text: 'Dez/2020', value: '12-2020' },
-
-        { text: 'Jan/2021', value: '1-2021' },
-        { text: 'Fev/2021', value: '2-2021' },
-        { text: 'Mar/2021', value: '3-2021' },
-        { text: 'Abr/2021', value: '4-2021' },
-        { text: 'Mai/2021', value: '5-2021' },
-        { text: 'Jun/2021', value: '6-2021' },
-        { text: 'Jul/2021', value: '7-2021' },
-        { text: 'Ago/2021', value: '8-2021' },
-        { text: 'Set/2021', value: '9-2021' },
-        { text: 'Out/2021', value: '10-2021' },
-        { text: 'Nov/2021', value: '11-2021' },
-        { text: 'Dez/2021', value: '12-2021' },
+    const currentDate = new Date();
+    const years = [
+        currentDate.getFullYear() - 1,
+        currentDate.getFullYear(),
+        currentDate.getFullYear() + 1,
     ];
+
+    const textMonths = [
+        'JAN',
+        'FEV',
+        'MAR',
+        'ABR',
+        'MAI',
+        'JUN',
+        'JUL',
+        'AGO',
+        'SET',
+        'OUT',
+        'NOV',
+        'DEZ',
+    ];
+    let allDates = [];
+    let index = 1;
+    years.forEach((year) => {
+        textMonths.forEach((month) => {
+            const date = `${year}-${index.toString().padStart(2, '0')}`;
+            const description = `${month}/${year}`;
+            allDates.push({ date, description, index: index++ });
+        });
+    });
+
+    // const months = [
+    //     { text: 'Jan/2019', value: '2019-01' },
+    //     { text: 'Fev/2019', value: '2019-02' },
+    //     { text: 'Mar/2019', value: '2019-03' },
+    //     { text: 'Abr/2019', value: '2019-04' },
+    //     { text: 'Mai/2019', value: '2019-05' },
+    //     { text: 'Jun/2019', value: '2019-06' },
+    //     { text: 'Jul/2019', value: '2019-07' },
+    //     { text: 'Ago/2019', value: '2019-08' },
+    //     { text: 'Set/2019', value: '2019-09' },
+    //     { text: 'Out/2019', value: '2019-10' },
+    //     { text: 'Nov/2019', value: '2019-11' },
+    //     { text: 'Dez/2019', value: '2019-12' },
+
+    //     { text: 'Jan/2020', value: '2020-01' },
+    //     { text: 'Fev/2020', value: '2020-02' },
+    //     { text: 'Mar/2020', value: '2020-03' },
+    //     { text: 'Abr/2020', value: '2020-04' },
+    //     { text: 'Mai/2020', value: '2020-05' },
+    //     { text: 'Jun/2020', value: '2020-06' },
+    //     { text: 'Jul/2020', value: '2020-07' },
+    //     { text: 'Ago/2020', value: '2020-08' },
+    //     { text: 'Set/2020', value: '2020-09' },
+    //     { text: 'Out/2020', value: '2020-10' },
+    //     { text: 'Nov/2020', value: '2020-11' },
+    //     { text: 'Dez/2020', value: '2020-12' },
+
+    //     { text: 'Jan/2021', value: '2021-01' },
+    //     { text: 'Fev/2021', value: '2021-02' },
+    //     { text: 'Mar/2021', value: '2021-03' },
+    //     { text: 'Abr/2021', value: '2021-04' },
+    //     { text: 'Mai/2021', value: '2021-05' },
+    //     { text: 'Jun/2021', value: '2021-06' },
+    //     { text: 'Jul/2021', value: '2021-07' },
+    //     { text: 'Ago/2021', value: '2021-08' },
+    //     { text: 'Set/2021', value: '2021-09' },
+    //     { text: 'Out/2021', value: '2021-10' },
+    //     { text: 'Nov/2021', value: '2021-11' },
+    //     { text: 'Dez/2021', value: '2021-12' },
+    // ];
 
     const handleSelectPeriod = (event) => {
         const period = event.target.value;
         filter(period);
+        setmonthSelected(period);
     };
+
+    const [monthSelected, setmonthSelected] = React.useState(currentMonth);
+
+    const previousPeriod = () => {
+        setmonthSelected();
+    };
+    const nextPeriod = () => {};
 
     return (
         <div className={css.flexRow}>
             <a className="waves-effect waves-light btn">
-                <i className="material-icons ">chevron_left</i>
+                <i className="material-icons " onClick={previousPeriod}>
+                    chevron_left
+                </i>
             </a>
 
             <select
-                className="browser-default"
                 onChange={handleSelectPeriod}
-                value={currentMonth}
+                className="browser-default"
+                value={monthSelected}
             >
-                {months.map((option, index) => {
+                {allDates.map((option, index) => {
                     return (
-                        <option key={index} value={option.value}>
-                            {option.text}
+                        <option key={index} value={option.date}>
+                            {option.description}
                         </option>
                     );
                 })}
             </select>
             <a className="waves-effect waves-light btn">
-                <i className="material-icons">chevron_right</i>
+                <i className="material-icons" onClick={nextPeriod}>
+                    chevron_right
+                </i>
             </a>
 
             <br />

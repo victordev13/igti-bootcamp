@@ -1,0 +1,25 @@
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.index {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.actions {
+    margin-left: 50px;
+}
+
+.actions i {
+    margin: 10px;
+    cursor: pointer;
+}
+.value {
+    font-size: 1.6rem;
+}
