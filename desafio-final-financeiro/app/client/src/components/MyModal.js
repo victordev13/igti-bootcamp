@@ -42,11 +42,8 @@ export default function MyModal({
     Modal.setAppElement('#root');
 
     var subtitle;
-    const title = !!isEdit ? 'Editar lançamento' : 'Novo Lançamento';
     const [modalIsOpen, setIsOpen] = React.useState(isOpen);
-    const [currentEditing, setCurrentEditing] = React.useState(
-        currentTransaction
-    );
+
     const openModal = () => {
         setIsOpen(true);
     };
@@ -67,8 +64,71 @@ export default function MyModal({
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        console.log(currentDate());
+        if (description && value && category) {
+            const data = {
+                description,
+                category,
+                type,
+                date,
+            };
+            console.log(data);
+            onSave(data);
+            closeModal();
+        }
     };
+
+    const [description, setDescription] = React.useState();
+    const [category, setCategory] = React.useState();
+    const [value, setValue] = React.useState();
+    const [type, setType] = React.useState('-');
+    const [date, setDate] = React.useState(currentDate);
+    const [mode, setMode] = React.useState();
+
+    const handleDescription = (event) => {
+        const newItem = event.target.value;
+        setDescription(newItem);
+    };
+    const handleCategory = (event) => {
+        const newItem = event.target.value;
+        setCategory(newItem);
+    };
+    const handleValue = (event) => {
+        const newItem = event.target.value;
+        setValue(newItem);
+    };
+    const handleType = (event) => {
+        const newItem = event.target.value;
+        setType(newItem);
+    };
+    const handleDate = (event) => {
+        const newItem = event.target.value;
+        setDate(newItem);
+    };
+
+    React.useEffect(() => {
+        console.log('Mode: ' + (!!isEdit ? 'Edição' : 'Inserção'));
+        if (!isEdit) {
+            setMode('insert');
+            return;
+        }
+
+        setMode('edit');
+        const {
+            description,
+            category,
+            value,
+            type,
+            date: yearMonthDay,
+        } = currentTransaction.data;
+
+        setDescription(description);
+        setCategory(category);
+        setValue(value);
+        setType(type);
+        setDate(date);
+    }, [currentTransaction]);
+
+    const title = !!isEdit ? 'Editar lançamento' : 'Novo Lançamento';
 
     return (
         <div>
@@ -99,8 +159,9 @@ export default function MyModal({
                                         name="type"
                                         type="radio"
                                         value="-"
-                                        checked
-                                        disabled={isEdit}
+                                        checked={type === '-'}
+                                        disabled={mode === 'edit'}
+                                        onChange={handleType}
                                     />
                                     <span>Despesa</span>
                                 </label>
@@ -111,7 +172,9 @@ export default function MyModal({
                                         name="type"
                                         type="radio"
                                         value="+"
-                                        disabled={isEdit}
+                                        checked={type === '+'}
+                                        disabled={mode === 'edit'}
+                                        onChange={handleType}
                                     />
                                     <span>Receita</span>
                                 </label>
@@ -123,9 +186,8 @@ export default function MyModal({
                             placeholder="Descrição"
                             id="description"
                             type="text"
-                            value={
-                                isEdit ? currentEditing.data.description : ''
-                            }
+                            value={description}
+                            onChange={handleDescription}
                         />
                         <label htmlFor="description" className="active">
                             Descrição
@@ -137,7 +199,8 @@ export default function MyModal({
                             placeholder="Categoria"
                             id="category"
                             type="text"
-                            value={isEdit ? currentEditing.data.category : ''}
+                            value={category}
+                            onChange={handleCategory}
                         />
                         <label htmlFor="category" className="active">
                             Categoria
@@ -149,9 +212,8 @@ export default function MyModal({
                             <input
                                 id="value"
                                 type="number"
-                                min="0"
-                                max="999999"
-                                value={isEdit ? currentEditing.data.value : ''}
+                                value={value}
+                                onChange={handleValue}
                             />
                             <label htmlFor="value" className="active">
                                 Valor
@@ -161,11 +223,8 @@ export default function MyModal({
                             <input
                                 id="date"
                                 type="date"
-                                value={
-                                    isEdit
-                                        ? currentEditing.data.yearMonthDay
-                                        : ''
-                                }
+                                value={date}
+                                onChange={handleDate}
                             />
                             <label htmlFor="date" className="active">
                                 Data

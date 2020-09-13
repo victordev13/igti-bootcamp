@@ -1,17 +1,15 @@
 import React from 'react';
 import css from './periodFilter.module.css';
-import moment from 'moment';
 
 export default function PeriodFilter({ filter }) {
-    const getCurrentMonth = () => {
-        const currentDate = new Date();
-        return `${
-            currentDate.getFullYear() + 1
-        }-${currentDate.getMonth().toString().padStart(2, '0')}`;
-    };
-    const [currentMonth, setCurrentMonth] = React.useState(getCurrentMonth);
-
     const currentDate = new Date();
+
+    const findByCurrentMonth = async () => {
+        const data = await filter(getCurrentMonth());
+        console.log(data);
+        return data;
+    };
+
     const years = [
         currentDate.getFullYear() - 1,
         currentDate.getFullYear(),
@@ -40,6 +38,7 @@ export default function PeriodFilter({ filter }) {
             const description = `${month}/${year}`;
             allDates.push({ date, description, index: index++ });
         });
+        index = 1;
     });
 
     // const months = [
@@ -88,12 +87,19 @@ export default function PeriodFilter({ filter }) {
         filter(period);
         setmonthSelected(period);
     };
+    const getCurrentMonth = () => {
+        const month = `${currentDate.getFullYear()}-${(
+            currentDate.getMonth() + 1
+        )
+            .toString()
+            .padStart(2, '0')}`;
 
-    const [monthSelected, setmonthSelected] = React.useState(currentMonth);
-
-    const previousPeriod = () => {
-        setmonthSelected();
+        filter(month);
+        return month;
     };
+    const [monthSelected, setmonthSelected] = React.useState(getCurrentMonth);
+
+    const previousPeriod = () => {};
     const nextPeriod = () => {};
 
     return (

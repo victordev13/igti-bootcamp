@@ -10,7 +10,6 @@ import MyModal from './components/MyModal';
 export default function App() {
     const findDataByPeriod = async (period) => {
         period = period ? period : '2020-09';
-        console.log(period);
 
         const data = await TransactionService.getByPeriod(period)
             .then((response) => {
@@ -22,16 +21,7 @@ export default function App() {
             });
     };
     const [transactions, setTransactions] = React.useState([]);
-
     const [currentTransaction, setCurrentTransaction] = React.useState([]);
-
-    const itemsTransactions = [
-        { id: 0, title: 'Item 1', description: 'teste', value: 20, type: '+' },
-        { id: 1, title: 'Item 1', description: 'teste', value: 20, type: '+' },
-        { id: 2, title: 'Item 1', description: 'teste', value: 20, type: '-' },
-        { id: 3, title: 'Item 1', description: 'teste', value: 20, type: '+' },
-        { id: 4, title: 'Item 1', description: 'teste', value: 20, type: '-' },
-    ];
     const [isModalOpen, setIsModalOpen] = React.useState(false);
     const [modalIsEdit, setModalIsEdit] = React.useState(false);
 
@@ -41,13 +31,22 @@ export default function App() {
     const handleModalClose = () => {
         setIsModalOpen(false);
     };
-    const handleModalSave = null;
+    const handleModalSave = (data) => {
+        !modalIsEdit
+            ? TransactionService.create(data)
+            : TransactionService.update(currentTransaction.data._id, data);
+    };
 
     const handleEditItem = async (id) => {
+        setModalIsEdit(true);
         const data = await TransactionService.getById(id);
         setCurrentTransaction(data);
         setIsModalOpen(true);
-        setModalIsEdit(true);
+    };
+    const handleRemoveItem = async (id) => {
+        await TransactionService.remove(id).then(() =>
+            console.log('ID:' + id + ' deletado')
+        );
     };
 
     const newTransaction = () => {
@@ -60,7 +59,11 @@ export default function App() {
             <PeriodFilter filter={findDataByPeriod} />
             <DataBar />
             <NewLaunchAndFilter newTransaction={newTransaction} />
-            <ListItems items={transactions} editItem={handleEditItem} />
+            <ListItems
+                items={transactions}
+                editItem={handleEditItem}
+                removeItem={handleRemoveItem}
+            />
             {isModalOpen && (
                 <MyModal
                     isOpen={isModalOpen}
@@ -68,6 +71,7 @@ export default function App() {
                     onSave={handleModalSave}
                     currentTransaction={currentTransaction}
                     isEdit={modalIsEdit}
+                    update={findDataByPeriod}
                 />
             )}
         </div>

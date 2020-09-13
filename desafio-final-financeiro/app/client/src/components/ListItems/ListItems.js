@@ -1,7 +1,7 @@
 import React from 'react';
 import Item from './Item';
 
-export default function ListItems({ editItem, items }) {
+export default function ListItems({ editItem, removeItem, items }) {
     items = items.sort((a, b) => {
         return a.day - b.day;
     });
@@ -20,6 +20,7 @@ export default function ListItems({ editItem, items }) {
                         value={value}
                         type={type}
                         editItem={editItem}
+                        removeItem={removeItem}
                     />
                 );
             })}

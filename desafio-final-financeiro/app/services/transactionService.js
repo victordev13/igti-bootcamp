@@ -12,7 +12,7 @@ const create = async (req, res) => {
     const { category, date, type } = req.body;
 
     if (date.length < DATE_LENGTH) {
-        res.status(500).send({ error: 'Formato de data inválida!' });
+        res.status(501).send({ error: 'Formato de data inválida!' });
     }
 
     if (!req.body) {
@@ -24,6 +24,7 @@ const create = async (req, res) => {
         console.log(transaction);
         let newTransaction = new TransactionModel(transaction);
         newTransaction = await newTransaction.save();
+        console.log(newTransaction);
         res.status(200).send({ message: 'Ok', data: newTransaction });
     } catch (error) {
         res.status(500).send({
@@ -75,7 +76,7 @@ const findOne = async (req, res) => {
 };
 
 const remove = async (req, res) => {
-    const id = req.body.id;
+    const id = req.params.id;
     if (validateId(id)) {
         res.status(500).send({
             error: 'É necessário informar o id do item.',
@@ -96,10 +97,10 @@ const remove = async (req, res) => {
 };
 
 const update = async (req, res) => {
-    const id = req.body.id;
+    const id = req.params.id;
 
     if (validateId(id)) {
-        res.status(500).send({
+        res.status(501).send({
             error: 'É necessário informar o id do item.',
         });
         return;
@@ -107,14 +108,18 @@ const update = async (req, res) => {
     if (!req.body) res.status(400).send('Dados não informados.');
 
     try {
-        const updatedTransaction = await TransactionModel.findByIdAndUpdate(
+        let updatedTransaction = await TransactionModel.findByIdAndUpdate(
             id,
             req.body,
             { new: true }
         );
-        res.send(updatedTransaction);
+        updatedTransaction = await updatedTransaction.save();
+        console.log(updatedTransaction);
+        res.status(200).send({ message: 'ok', data: updatedTransaction });
     } catch (error) {
-        res.status(500).send({ error: 'Erro ao atualizar item id: ' + id });
+        res.status(500).send({
+            error: 'Erro ao atualizar item id: ' + id + '/' + error,
+        });
     }
 };
 
@@ -124,12 +129,14 @@ const getAllDateFields = (date) => {
     let allDate = new Date(date.toString());
     allDate = {
         year: allDate.getFullYear(),
-        month: allDate.getMonth() + 1,
+        month: (allDate.getMonth() + 1).toString().padStart(2, '0'),
         day: allDate.getDate(),
-        yearMonth: `${allDate.getFullYear()}-${allDate.getMonth() + 1}`,
-        yearMonthDay: `${allDate.getFullYear()}-${
-            allDate.getMonth() + 1
-        }-${allDate.getDate()}`,
+        yearMonth: `${allDate.getFullYear()}-${(allDate.getMonth() + 1)
+            .toString()
+            .padStart(2, '0')}`,
+        yearMonthDay: `${allDate.getFullYear()}-${(allDate.getMonth() + 1)
+            .toString()
+            .padStart(2, '0')}-${allDate.getDate()}`,
     };
     return ({ year, month, day, yearMonth, yearMonthDay } = allDate);
 };

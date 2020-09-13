@@ -9,9 +9,9 @@ transactionRouter.get('/', TransactionService.findByPeriod);
 
 transactionRouter.get('/:id', TransactionService.findOne);
 
-transactionRouter.delete('/', TransactionService.remove);
+transactionRouter.delete('/:id', TransactionService.remove);
 
-transactionRouter.put('/', TransactionService.update);
+transactionRouter.put('/:id', TransactionService.update);
 
 transactionRouter.use('/', (req, res) => {
     res.send({ message: 'API em execução' });

@@ -9,14 +9,17 @@ export default function Item({
     value,
     type,
     editItem,
+    removeItem,
 }) {
     const color = type === '+' ? 'green accent-2' : 'red lighten-3';
 
-    const handleEditItem = async () => {
+    const handleEditItem = () => {
         editItem(id);
     };
 
-    const removeItem = () => {};
+    const handleRemoveItem = () => {
+        removeItem(id);
+    };
     return (
         <div>
             <div className={`card-panel center ${color}`}>
@@ -37,7 +40,10 @@ export default function Item({
                             >
                                 create
                             </i>
-                            <i className="material-icons" onClick={removeItem}>
+                            <i
+                                className="material-icons"
+                                onClick={handleRemoveItem}
+                            >
                                 delete
                             </i>
                         </div>
